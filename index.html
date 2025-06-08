@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dapper Barber - Premium Men's Grooming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="barber-pole"></div>
+                    <a href="#" class="text-2xl font-bold">The Dapper Barber</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-purple-400 transition">Home</a>
+                    <a href="#services" class="hover:text-purple-400 transition">Services</a>
+                    <a href="#barbers" class="hover:text-purple-400 transition">Our Barbers</a>
+                    <a href="#about" class="hover:text-purple-400 transition">About</a>
+                    <a href="#booking" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded transition">Book
+                        Now</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="#home" class="block py-2 hover:text-purple-400">Home</a>
+                <a href="#services" class="block py-2 hover:text-purple-400">Services</a>
+                <a href="#barbers" class="block py-2 hover:text-purple-400">Our Barbers</a>
+                <a href="#about" class="block py-2 hover:text-purple-400">About</a>
+                <a href="#booking" class="block bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded w-max mt-2">Book
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image flex items-center justify-center text-center text-white">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Precision Cuts & Classic Shaves</h1>
+            <p class="text-xl mb-8">Experience traditional barbering with a modern twist</p>
+            <a href="#booking"
+                class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Book
+                Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Story</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3"
+                        alt="Barbershop interior" class="rounded-lg shadow-lg w-full">
+                </div>
+
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Established in 2010</h3>
+                    <p class="text-gray-600 mb-4">Founded by master barber James Wilson, The Dapper Barber has been
+                        serving the community with exceptional grooming services for over a decade. What started as a
+                        small two-chair shop has grown into the premier men's grooming destination in the city.</p>
+                    <p class="text-gray-600 mb-6">We combine traditional barbering techniques with modern trends to
+                        create timeless looks tailored to each client. Our shop maintains the warm atmosphere of an
+                        old-school barbershop while offering the latest in men's grooming services.</p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-cut text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">10+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-award text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">Award Winning</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-users text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">5000+ Happy Clients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-star text-purple-600"></i>
+                            </div>
+                            <span class="font-medium">Premium Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Services</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a variety of traditional and contemporary barbering
+                    services to help you look your best.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-cut text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Classic Haircut</h3>
+                    <p class="text-gray-600 mb-4">Precision haircut with scissor and clipper work including a hot towel
+                        finish.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$35</span>
+                        <span class="text-sm text-gray-500">45 min</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-air-freshener text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Hot Towel Shave</h3>
+                    <p class="text-gray-600 mb-4">Traditional straight razor shave with hot towels and premium shaving
+                        products.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$45</span>
+                        <span class="text-sm text-gray-500">60 min</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-spa text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Beard Grooming</h3>
+                    <p class="text-gray-600 mb-4">Beard trim, shaping and conditioning for the perfect beard look.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$25</span>
+                        <span class="text-sm text-gray-500">30 min</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-fan text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Royal Treatment</h3>
+                    <p class="text-gray-600 mb-4">Full haircut, hot towel shave with facial massage, and beard
+                        treatment.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$75</span>
+                        <span class="text-sm text-gray-500">90 min</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-child text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Kids Cut</h3>
+                    <p class="text-gray-600 mb-4">Specialized haircuts for young gentlemen with a toy at the end.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$25</span>
+                        <span class="text-sm text-gray-500">30 min</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-magic text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Color Services</h3>
+                    <p class="text-gray-600 mb-4">Professional hair coloring and gray blending for a fresh look.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-gray-800">$60+</span>
+                        <span class="text-sm text-gray-500">60 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barbers Section -->
+    <section id="barbers" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Meet Our Barbers</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our master barbers bring years of experience and passion to
+                    every cut and shave.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Barber 1 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1583864697781-a890bc014a49?ixlib=rb-4.0.3"
+                            alt="Barber James" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">James Wilson</h3>
+                    <p class="text-purple-600 font-medium mb-4">Master Barber/Owner</p>
+                    <p class="text-gray-600 mb-4">With over 15 years of experience, James specializes in classic and
+                        modern haircuts.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Barber 2 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3"
+                            alt="Barber Marcus" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Marcus Johnson</h3>
+                    <p class="text-purple-600 font-medium mb-4">Senior Barber</p>
+                    <p class="text-gray-600 mb-4">A specialist in beard grooming and straight razor shaves with 8 years
+                        experience.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Barber 3 -->
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1570295999919-56ce329fd210?ixlib=rb-4.0.3"
+                            alt="Barber Carlos" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Carlos Mendez</h3>
+                    <p class="text-purple-600 font-medium mb-4">Master Barber</p>
+                    <p class="text-gray-600 mb-4">Specializes in modern fades and creative designs with a meticulous
+                        attention to detail.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from our satisfied
+                    customers</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Best haircut I've ever had! The attention to detail is incredible. Been
+                        coming here for 3 years now and won't go anywhere else."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">David L.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The hot towel shave is an experience everyone should try at least once.
+                        Felt like royalty and my skin has never been smoother."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-quote-left text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Robert T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Carlos gave me the perfect fade for my wedding. Got so many compliments
+                        all night. These guys truly are artists with clippers."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Book Your Appointment</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Schedule your next haircut, shave or full grooming experience with our
+                    talented barbers.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+                <!-- Tabs -->
+                <div class="flex border-b">
+                    <button
+                        class="py-4 px-6 font-medium text-gray-600 border-b-2 border-transparent booking-tab active-tab">Book
+                        Service</button>
+                    <button class="py-4 px-6 font-medium text-gray-600 border-b-2 border-transparent booking-tab">Book
+                        Barber</button>
+                    <button
+                        class="py-4 px-6 font-medium text-gray-600 border-b-2 border-transparent booking-tab">Confirm</button>
+                </div>
+
+                <!-- Booking Form -->
+                <form id="booking-form" class="p-6 md:p-8">
+                    <!-- Step 1: Service Selection -->
+                    <div id="step1" class="booking-step block">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Select Your Service</h3>
+
+                        <div class="grid md:grid-cols-2 gap-4 mb-8">
+                            <label
+                                class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
+                                <input type="radio" name="service" value="Classic Haircut" class="mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Classic Haircut</h4>
+                                    <div class="flex justify-between text-sm">
+                                        <span>$35</span>
+                                        <span>45 min</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label
+                                class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
+                                <input type="radio" name="service" value="Hot Towel Shave" class="mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Hot Towel Shave</h4>
+                                    <div class="flex justify-between text-sm">
+                                        <span>$45</span>
+                                        <span>60 min</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label
+                                class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
+                                <input type="radio" name="service" value="Beard Grooming" class="mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Beard Grooming</h4>
+                                    <div class="flex justify-between text-sm">
+                                        <span>$25</span>
+                                        <span>30 min</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label
+                                class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
+                                <input type="radio" name="service" value="Royal Treatment" class="mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Royal Treatment</h4>
+                                    <div class="flex justify-between text-sm">
+                                        <span>$75</span>
+                                        <span>90 min</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button type="button"
+                                class="next-step bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Barber Preference -->
+                    <div id="step2" class="booking-step hidden">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Select Your Barber</h3>
+
+                        <div class="grid md:grid-cols-3 gap-4 mb-8">
+                            <label
+                                class="barber-option flex flex-col items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400 text-center">
+                                <div class="w-24 h-24 mb-3 overflow-hidden rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1583864697781-a890bc014a49?ixlib=rb-4.0.3"
+                                        alt="Barber James" class="w-full h-full object-cover">
+                                </div>
+                                <input type="radio" name="barber" value="James Wilson" class="mb-2">
+                                <h4 class="font-bold text-gray-800">James Wilson</h4>
+                                <p class="text-sm text-purple-600">Master Barber</p>
+                            </label>
+
+                            <label
+                                class="barber-option flex flex-col items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400 text-center">
+                                <div class="w-24 h-24 mb-3 overflow-hidden rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3"
+                                        alt="Barber Marcus" class="w-full h-full object-cover">
+                                </div>
+                                <input type="radio" name="barber" value="Marcus Johnson" class="mb-2">
+                                <h4 class="font-bold text-gray-800">Marcus Johnson</h4>
+                                <p class="text-sm text-purple-600">Senior Barber</p>
+                            </label>
+
+                            <label
+                                class="barber-option flex flex-col items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400 text-center">
+                                <div class="w-24 h-24 mb-3 overflow-hidden rounded-full">
+                                    <img src="https://images.unsplash.com/photo-1570295999919-56ce329fd210?ixlib=rb-4.0.3"
+                                        alt="Barber Carlos" class="w-full h-full object-cover">
+                                </div>
+                                <input type="radio" name="barber" value="Carlos Mendez" class="mb-2">
+                                <h4 class="font-bold text-gray-800">Carlos Mendez</h4>
+                                <p class="text-sm text-purple-600">Master Barber</p>
+                            </label>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button type="button"
+                                class="prev-step bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded">Back</button>
+                            <button type="button"
+                                class="next-step bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Date & Time -->
+                    <div id="step3" class="booking-step hidden">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Select Date & Time</h3>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Date</label>
+                                <input type="date" name="date"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Time</label>
+                                <select name="time"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
+                                    <option value="">Select time</option>
+                                    <option value="09:00 AM">09:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="01:00 PM">01:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="03:00 PM">03:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:00 PM">05:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="md:col-span-2">
+                                <label class="block text-gray-700 font-medium mb-2">Special Requests</label>
+                                <textarea name="requests" rows="3"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
+                                    placeholder="Any special requests or notes for your barber"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button type="button"
+                                class="prev-step bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded">Back</button>
+                            <button type="button"
+                                class="next-step bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Personal Info -->
+                    <div id="step4" class="booking-step hidden">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Your Information</h3>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" name="name"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" name="email"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
+                                    required>
+                            </div>
+
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" name="phone"
+                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <button type="button"
+                                class="prev-step bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded">Back</button>
+                            <button type="submit"
+                                class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded">Complete
+                                Booking</button>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation -->
+                    <div id="confirmation" class="hidden p-8 text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-check text-green-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Booking Confirmed!</h3>
+                        <p class="text-gray-600 mb-6">Your appointment has been successfully booked. A confirmation has
+                            been sent to your email.</p>
+                        <div class="bg-purple-50 p-6 rounded-lg mb-6 text-left max-w-md mx-auto">
+                            <h4 class="font-bold text-lg mb-2 text-gray-800">Appointment Details</h4>
+                            <p class="text-gray-600"><span class="font-medium">Service:</span> <span
+                                    id="conf-service"></span></p>
+                            <p class="text-gray-600"><span class="font-medium">Barber:</span> <span
+                                    id="conf-barber"></span></p>
+                            <p class="text-gray-600"><span class="font-medium">Date:</span> <span id="conf-date"></span>
+                            </p>
+                            <p class="text-gray-600"><span class="font-medium">Time:</span> <span id="conf-time"></span>
+                            </p>
+                        </div>
+                        <button type="button" id="new-booking"
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded">Book
+                            Another Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">The Dapper Barber</h3>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-400"></i>
+                        <p>123 Barber Street<br>New York, NY 10001</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-phone-alt mr-3 text-purple-400"></i>
+                        <p>(212) 555-1234</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-envelope mr-3 text-purple-400"></i>
+                        <p>hello@dapperbarber.com</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Saturday</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Sunday</span>
+                            <span>11:00 AM - 4:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-6 text-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 The Dapper Barber. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
