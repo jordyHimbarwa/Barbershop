@@ -1,0 +1,61 @@
+ .hero-image {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3');
+     background-size: cover;
+     background-position: center;
+     height: 80vh;
+ }
+
+ .barber-pole {
+     background: repeating-linear-gradient(45deg,
+             #f00,
+             #f00 20px,
+             #fff 20px,
+             #fff 40px,
+             #00f 40px,
+             #00f 60px);
+     width: 30px;
+     height: 150px;
+     position: relative;
+     margin: 0 auto;
+ }
+
+ .barber-pole:before,
+ .barber-pole:after {
+     content: "";
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: linear-gradient(#333, #111);
+     border-radius: 50%;
+     left: -5px;
+ }
+
+ .barber-pole:before {
+     top: -20px;
+ }
+
+ .barber-pole:after {
+     bottom: -20px;
+ }
+
+ .service-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+ }
+
+ #booking-form input,
+ #booking-form select,
+ #booking-form textarea {
+     transition: all 0.3s ease;
+ }
+
+ #booking-form input:focus,
+ #booking-form select:focus,
+ #booking-form textarea:focus {
+     border-color: #9333ea;
+     box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.3);
+ }
+
+ .active-tab {
+     border-bottom: 3px solid #9333ea;
+ }
