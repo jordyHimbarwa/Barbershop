@@ -390,8 +390,8 @@
                             <label
                                 class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
                                 <input type="radio" name="service" value="Classic Haircut" class="mr-3">
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Classic Haircut</h4>
+                                <div class="text-gray-800">
+                                    <h4 class="font-bold">Classic Haircut</h4>
                                     <div class="flex justify-between text-sm">
                                         <span>$35</span>
                                         <span>45 min</span>
@@ -402,8 +402,8 @@
                             <label
                                 class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
                                 <input type="radio" name="service" value="Hot Towel Shave" class="mr-3">
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Hot Towel Shave</h4>
+                                <div class="text-gray-800">
+                                    <h4 class="font-bold">Hot Towel Shave</h4>
                                     <div class="flex justify-between text-sm">
                                         <span>$45</span>
                                         <span>60 min</span>
@@ -414,8 +414,8 @@
                             <label
                                 class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
                                 <input type="radio" name="service" value="Beard Grooming" class="mr-3">
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Beard Grooming</h4>
+                                <div class="text-gray-800">
+                                    <h4 class="font-bold">Beard Grooming</h4>
                                     <div class="flex justify-between text-sm">
                                         <span>$25</span>
                                         <span>30 min</span>
@@ -426,8 +426,8 @@
                             <label
                                 class="service-option flex items-center p-4 border rounded-lg cursor-pointer hover:border-purple-400">
                                 <input type="radio" name="service" value="Royal Treatment" class="mr-3">
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Royal Treatment</h4>
+                                <div class="text-gray-800">
+                                    <h4 class="font-bold">Royal Treatment</h4>
                                     <div class="flex justify-between text-sm">
                                         <span>$75</span>
                                         <span>90 min</span>
@@ -497,13 +497,13 @@
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2">Date</label>
                                 <input type="date" name="date"
-                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
+                                    class="text-black w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
                             </div>
 
                             <div>
                                 <label class="block text-gray-700 font-medium mb-2">Time</label>
                                 <select name="time"
-                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
+                                    class="text-black w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500">
                                     <option value="">Select time</option>
                                     <option value="09:00 AM">09:00 AM</option>
                                     <option value="10:00 AM">10:00 AM</option>
@@ -520,7 +520,7 @@
                             <div class="md:col-span-2">
                                 <label class="block text-gray-700 font-medium mb-2">Special Requests</label>
                                 <textarea name="requests" rows="3"
-                                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
+                                    class="text-black w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-purple-500"
                                     placeholder="Any special requests or notes for your barber"></textarea>
                             </div>
                         </div>
@@ -570,14 +570,14 @@
                     </div>
 
                     <!-- Confirmation -->
-                    <div id="confirmation" class="hidden p-8 text-center">
+                    <div id="confirmation" class="booking-step hidden p-8 text-center">
                         <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                             <i class="fas fa-check text-green-600 text-3xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-gray-800">Booking Confirmed!</h3>
                         <p class="text-gray-600 mb-6">Your appointment has been successfully booked. A confirmation has
                             been sent to your email.</p>
-                        <div class="bg-purple-50 p-6 rounded-lg mb-6 text-left max-w-md mx-auto">
+                        <div class="bg-purple-50 p-6 rounded-lg mb-6 text-left max-w-md mx-auto text-gray-800">
                             <h4 class="font-bold text-lg mb-2 text-gray-800">Appointment Details</h4>
                             <p class="text-gray-600"><span class="font-medium">Service:</span> <span
                                     id="conf-service"></span></p>
